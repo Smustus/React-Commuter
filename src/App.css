@@ -1,0 +1,40 @@
+#root {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  min-width: 350px;
+  min-height: 100vh;
+  background: rgb(177,161,161);
+  background: linear-gradient(180deg, rgb(135, 135, 165) 10%, rgb(151, 151, 179) 40%, rgb(89, 89, 109) 90%);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(153, 153, 153); */
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.timetable {
+  display: flex;
+  transition: opacity 0.5s ease-in;
+}
+
+
+
+@media only screen and (max-width: 680px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timetable {
+    flex-direction: column;
+  }
+}

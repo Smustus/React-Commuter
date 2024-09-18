@@ -1,0 +1,64 @@
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  
+}
+
+fieldset {
+  position: relative;
+  width: fit-content;
+  min-width: 350px;
+  margin: 6px;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  /* box-shadow: 0px -2px 1px rgba(0, 0, 0, 0.2); */
+  background: rgb(177,161,161);
+  background: linear-gradient(180deg, rgba(132, 132, 173, 0.5) 10%, rgb(225, 225, 255) 40%, rgb(89, 89, 109) 90%);
+  color: rgb(255, 255, 255);
+  background: rgb(177,161,161);
+  background: linear-gradient(180deg, rgba(37, 37, 48, 0.5) 10%, rgb(160, 160, 194) 40%, rgb(27, 27, 34) 90%);
+}
+
+legend {
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  transform: translateY(-2px);
+  letter-spacing: 1px;
+}
+
+button {
+  margin: 6px;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 8px;
+  background-color: rgba(37, 45, 54, 1);
+  z-index: 50;
+  padding: 8px;
+  border-radius: 6px;
+  width: 95%;
+  height: 200px;
+  list-style-type: none;
+  overflow: scroll;
+}
+
+.suggestions-dropdown li {
+  padding: 2px;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: rgba(92, 110, 131, 0.6);
+  cursor: pointer;
+  border-radius: 2px;
+}
